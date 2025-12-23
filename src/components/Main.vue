@@ -36,17 +36,17 @@
         margin-top: 15px;
     }
 
-    main section {
+    section {
         margin-top: 25px;
     }
 
-    main h2 {
+    h2 {
         font-size: 1.3rem;
         color: #34495e;
         margin-bottom: 3px;
     }
 
-    main p {
+    p {
         font-size: 0.9rem;
         color: #555;
     }

@@ -12,7 +12,7 @@
         font-size: 0.8rem;
     }
 
-    footer a {
+    a {
         color: #40b883;
     }
 </style>
