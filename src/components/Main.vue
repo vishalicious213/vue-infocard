@@ -1,32 +1,36 @@
-<script setup></script>
+<script setup>
+    import {ref} from 'vue'
+    const facts = ref([
+        {
+            "adjective": "Lightweight",
+            "description": "I am incredibly small and fast! My core library is only around 30KB, so I won't slow you down."
+        },
+        {
+            "adjective": "Approachable",
+            "description": "Easy to learn and use, even for beginners. I have a gentle learning curve, clear documentation, and a supportive community."
+        },
+        {
+            "adjective": "Versatile",
+            "description": "I can handle everything from simple interactive elements to complex single-page applications. I'm great for small projects and large-scale applications alike."
+        }
+    ])
+</script>
 
 <template>
     <main>
         <section>
-            <h2>
-                I'm <span class="highlight">Lightweight</span>
-            </h2>
-            <p>
-                I am incredibly small and fast! My core library is only around 30KB, so I won't slow you down.
-            </p>
+            <h2>I'm <span class="highlight">{{facts[0].adjective}}</span></h2>
+            <p>{{facts[0].description}}</p>
         </section>
 
         <section>
-            <h2>
-                I'm <span class="highlight">Approachable</span>
-            </h2>
-            <p>
-                Easy to learn and use, even for beginners. I have a gentle learning curve, clear documentation, and a supportive community.
-            </p>
+            <h2>I'm <span class="highlight">{{facts[1].adjective}}</span></h2>
+            <p>{{facts[1].description}}</p>
         </section>
         
         <section>
-            <h2>
-            I'm <span class="highlight">Versatile</span>
-            </h2>
-            <p>
-                I can handle everything from simple interactive elements to complex single-page applications. I'm great for small projects and large-scale applications alike.
-            </p>
+            <h2>I'm <span class="highlight">{{facts[2].adjective}}</span></h2>
+            <p>{{facts[2].description}}</p>
         </section>
     </main>
 </template>
