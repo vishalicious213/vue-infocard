@@ -1,5 +1,5 @@
 <script setup>
-    import {ref} from 'vue'
+    import { ref } from 'vue'
     const href = ref("https://vuejs.org/")
 </script>
 
